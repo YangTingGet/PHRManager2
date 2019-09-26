@@ -42,9 +42,9 @@ public interface AdminDao {
 
 //对于资讯的操作
     /**
-     * 查询未审核的资讯
+     * 查询未审核的资讯state = 0,1,2(0为未审核，1为通过，2为不通过)
      */
-    List<AdviceEntiy> selectInformation();
+    List<AdviceEntiy> selectInformationState0();
 
     /**
      * 修改资讯审核状态

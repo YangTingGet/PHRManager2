@@ -1,9 +1,6 @@
 package com.group2.dao;
 
-import com.group2.entiy.ABSEntiy;
-import com.group2.entiy.DrugEntiy;
-import com.group2.entiy.MedRecordEntiy;
-import com.group2.entiy.UserEntiy;
+import com.group2.entiy.*;
 
 import java.util.List;
 
@@ -79,6 +76,16 @@ public interface UserDao {
 
 
 //访问资讯
+
+    /**
+     *根据资讯的id搜索资讯内容
+     */
+    AdviceEntiy selectAdvice(String adviceId);
+
+    /**
+     *查找一些资讯（用于首页展示）
+     */
+    List<AdviceEntiy> selectAdvices();
 
 }
 
